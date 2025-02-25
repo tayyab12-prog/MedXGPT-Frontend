@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedXGPT - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">MedXGPT Dashboard</div>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </header>
+
+    <section class="dashboard">
+        <h2>Upload X-Ray for Diagnosis</h2>
+        <input type="file" id="xray-upload" accept="image/*">
+        <button onclick="analyzeXray()">Analyze</button>
+        <p id="result"></p>
+        <img id="xray-preview" src="" alt="X-Ray Preview">
+    </section>
+</body>
+</html>
